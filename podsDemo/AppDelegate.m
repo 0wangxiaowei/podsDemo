@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +21,25 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UIViewController alloc]init];
+    
+    [MBProgressHUD showHUDAddedTo:self.window animated:YES];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    //
+        [manager GET:@"http://cloud.repaiapp.com/yunying/spzt.php?id=9&app_id=3119872284&sche=fen_nine_anzhong&app_channel=Android//" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    
+            //取出“材料”数据
+            NSArray *data = responseObject[@"data"];
+            NSLog(@"%@",data);
+            //回传data
+//            success(self, data);
+    
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"%@",error);
+//            failure (self, error);
+        }];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
