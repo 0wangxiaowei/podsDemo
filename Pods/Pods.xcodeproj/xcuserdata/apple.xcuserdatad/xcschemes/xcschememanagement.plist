@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FSMediaPicker-FSMediaPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FSMediaPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,17 +34,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Masonry.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>shareSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,12 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>224BAC8B3071C9383E68E904B41720E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<key>7982B2134360934BB6E874828DC3E86B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,17 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF2696EC33AADC80EB0BB2B7C1CA5A3F</key>
+		<key>B238B97A063BBF4A8381D92F8122FE5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B23B3D15FFC0FC9893968F478086D58D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BE46103076A663FA6D14B35CCE998AED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
