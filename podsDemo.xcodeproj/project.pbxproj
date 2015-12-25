@@ -85,6 +85,8 @@
 		18D875411C2A8C7D00812C2D /* RichTextEditorToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D874F41C2A8C7D00812C2D /* RichTextEditorToggleButton.m */; };
 		18D875421C2A8C7D00812C2D /* RichTextEditorToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D874F61C2A8C7D00812C2D /* RichTextEditorToolbar.m */; };
 		18D875441C2A9C3B00812C2D /* faceiron.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D875431C2A9C3B00812C2D /* faceiron.png */; };
+		18EF8B651C2BA3A40028E20D /* ThreeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF8B641C2BA3A40028E20D /* ThreeUIViewController.m */; };
+		18EF8B671C2BD35E0028E20D /* okImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EF8B661C2BD35E0028E20D /* okImage.png */; };
 		18F4263B1C229A3C00B7F98B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4263A1C229A3C00B7F98B /* main.m */; };
 		18F4263E1C229A3C00B7F98B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4263D1C229A3C00B7F98B /* AppDelegate.m */; };
 		18F426401C229A3C00B7F98B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F4263F1C229A3C00B7F98B /* Assets.xcassets */; };
@@ -209,6 +211,9 @@
 		18D874F51C2A8C7D00812C2D /* RichTextEditorToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextEditorToolbar.h; sourceTree = "<group>"; };
 		18D874F61C2A8C7D00812C2D /* RichTextEditorToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextEditorToolbar.m; sourceTree = "<group>"; };
 		18D875431C2A9C3B00812C2D /* faceiron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceiron.png; sourceTree = "<group>"; };
+		18EF8B631C2BA3A40028E20D /* ThreeUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeUIViewController.h; sourceTree = "<group>"; };
+		18EF8B641C2BA3A40028E20D /* ThreeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeUIViewController.m; sourceTree = "<group>"; };
+		18EF8B661C2BD35E0028E20D /* okImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = okImage.png; sourceTree = "<group>"; };
 		18F426361C229A3C00B7F98B /* podsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = podsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F4263A1C229A3C00B7F98B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18F4263C1C229A3C00B7F98B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -400,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				18D875431C2A9C3B00812C2D /* faceiron.png */,
+				18EF8B661C2BD35E0028E20D /* okImage.png */,
 				18F426381C229A3C00B7F98B /* podsDemo */,
 				18F4264C1C229A3C00B7F98B /* podsDemoTests */,
 				18F426571C229A3C00B7F98B /* podsDemoUITests */,
@@ -428,6 +434,8 @@
 				18F4263D1C229A3C00B7F98B /* AppDelegate.m */,
 				18F4B76E1C29278C00355A33 /* OneViewController.h */,
 				18F4B76F1C29278C00355A33 /* OneViewController.m */,
+				18EF8B631C2BA3A40028E20D /* ThreeUIViewController.h */,
+				18EF8B641C2BA3A40028E20D /* ThreeUIViewController.m */,
 				18D874931C2A8C4F00812C2D /* TwoViewController.h */,
 				18D874941C2A8C4F00812C2D /* TwoViewController.m */,
 				18F426661C22A13700B7F98B /* testView.h */,
@@ -644,6 +652,7 @@
 				18D875161C2A8C7D00812C2D /* justifyleft.png in Resources */,
 				18D874FC1C2A8C7D00812C2D /* button.png in Resources */,
 				18D875071C2A8C7D00812C2D /* colors.jpg in Resources */,
+				18EF8B671C2BD35E0028E20D /* okImage.png in Resources */,
 				18D875361C2A8C7D00812C2D /* popoverBg.png in Resources */,
 				18D874FD1C2A8C7D00812C2D /* buttoncenter.png in Resources */,
 				18D875181C2A8C7D00812C2D /* justifyright.png in Resources */,
@@ -729,6 +738,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D875291C2A8C7D00812C2D /* UIView+RichTextEditor.m in Sources */,
+				18EF8B651C2BA3A40028E20D /* ThreeUIViewController.m in Sources */,
 				18D875421C2A8C7D00812C2D /* RichTextEditorToolbar.m in Sources */,
 				18F426681C22A13700B7F98B /* testView.m in Sources */,
 				18D8753C1C2A8C7D00812C2D /* WETouchableView.m in Sources */,

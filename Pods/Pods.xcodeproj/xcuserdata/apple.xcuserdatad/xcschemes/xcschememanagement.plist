@@ -39,10 +39,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TOWebViewController-TOWebViewControllerLocalizable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TOWebViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>224BAC8B3071C9383E68E904B41720E0</key>
+		<key>3783F14F5197F0699B2466800ABF5F02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39F14625930A3AE8735DFD48A19F96C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,12 +87,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A34A6A20149624FEC6A2CB8FBA420B19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B238B97A063BBF4A8381D92F8122FE5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B23B3D15FFC0FC9893968F478086D58D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB4C2D6735EFA041BAF0CDDB658260B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1DACEAE7D33EF8E34EB857C6C6A8978</key>
 		<dict>
 			<key>primary</key>
 			<true/>

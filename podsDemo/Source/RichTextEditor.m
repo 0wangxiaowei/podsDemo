@@ -192,11 +192,19 @@
 
 #pragma mark - RichTextEditorToolbarDelegate Methods -
 - (void)richTextEditorToolbarDidSelectiron{
-    NSLog(@"%@",self.text);
+
+    NSMutableString *mustr = [[NSMutableString alloc] initWithString:self.text];
     
-    if (self.text.length) {
-        NSLog(@"%@",self.htmlString);
-    }
+
+    [mustr appendString:@"\n\n"];
+    [mustr appendString:@"<img src= \"faceiron.png\" alt=\"上传后可查看\"/>"];
+    [mustr appendString:@"\n\n"];
+//    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//    [self addSubview:view];
+//    view.image = [UIImage imageNamed:@"buttonleftSelected"];
+    
+    self.text =(NSString *)mustr;
+
 }
 - (void)richTextEditorToolbarDidSelectBold
 {

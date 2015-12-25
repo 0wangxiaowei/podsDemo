@@ -188,15 +188,15 @@
 
 - (void)fontSelected:(UIButton *)sender
 {
-//    [self.delegate richTextEditorToolbarDidSelectiron];
+    [self.delegate richTextEditorToolbarDidSelectiron];
     //访问相册
 //    NSLog(@"%@",self.)
     
-	RichTextEditorFontPickerViewController *fontPicker= [[RichTextEditorFontPickerViewController alloc] init];
-	fontPicker.fontNames = [self.dataSource fontFamilySelectionForRichTextEditorToolbar];
-	fontPicker.delegate = self;
-	fontPicker.dataSource = self;
-	[self presentViewController:fontPicker fromView:sender];
+//	RichTextEditorFontPickerViewController *fontPicker= [[RichTextEditorFontPickerViewController alloc] init];
+//	fontPicker.fontNames = [self.dataSource fontFamilySelectionForRichTextEditorToolbar];
+//	fontPicker.delegate = self;
+//	fontPicker.dataSource = self;
+//	[self presentViewController:fontPicker fromView:sender];
 }
 
 - (void)textBackgroundColorSelected:(UIButton *)sender

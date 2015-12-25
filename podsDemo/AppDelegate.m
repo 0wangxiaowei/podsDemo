@@ -11,6 +11,7 @@
 #import "MBProgressHUD.h"
 #import "OneViewController.h"
 #import "TwoViewController.h"
+#import "ThreeUIViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[TwoViewController alloc]init];
+    self.window.rootViewController = [[ThreeUIViewController alloc]init];
     
 //    [MBProgressHUD showHUDAddedTo:self.window animated:YES];
 //    

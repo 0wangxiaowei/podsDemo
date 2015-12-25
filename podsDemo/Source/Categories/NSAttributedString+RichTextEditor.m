@@ -26,9 +26,20 @@
 // THE SOFTWARE.
 
 #import "NSAttributedString+RichTextEditor.h"
-
+//@interface NSAttributedString ()
+//{
+//    NSInteger oldindex;
+//}
+//@end
 @implementation NSAttributedString (RichTextEditor)
-
+//- (instancetype)init
+//{
+//    self = [super init];
+//    if (self) {
+//        oldindex = 0;
+//    }
+//    return self;
+//}
 #pragma mark - Public MEthods -
 
 - (NSRange)firstParagraphRangeFromTextRange:(NSRange)range
@@ -41,7 +52,7 @@
 		range.location-1 :
 		range.location;
 	
-	for (int i=startingRange ; i>=0 ; i--)
+	for (NSInteger i=startingRange ; i>=0 ; i--)
 	{
 		char c = [self.string characterAtIndex:i];
 		if (c == '\n')
@@ -55,7 +66,7 @@
 	
 	NSInteger moveForwardIndex = (range.location > start) ? range.location : start;
 	
-	for (int i=moveForwardIndex; i<= self.string.length-1 ; i++)
+	for (NSInteger i=moveForwardIndex; i<= self.string.length-1 ; i++)
 	{
 		char c = [self.string characterAtIndex:i];
 		if (c == '\n')
@@ -92,9 +103,12 @@
 
 - (NSString *)htmlString
 {
+    
 	NSMutableString *htmlString = [NSMutableString string];
 	NSArray *paragraphRanges = [self rangeOfParagraphsFromTextRange:NSMakeRange(0, self.string.length-1)];
-    NSLog(@"paragraphRanges%@",paragraphRanges);
+    NSLog(@"paragraphRanges%@--%ld",paragraphRanges,paragraphRanges.count);
+//    oldindex = self.string.length-1;
+    
 	for (int i=0 ; i<paragraphRanges.count ; i++)
 	{
         
@@ -103,6 +117,7 @@
 		NSRange range = [value rangeValue];
 		NSDictionary *paragraphDictionary = [self attributesAtIndex:range.location effectiveRange:nil];
 		NSParagraphStyle *paragraphStyle = [paragraphDictionary objectForKey:NSParagraphStyleAttributeName];
+        
 		NSString *textAlignmentString = [self htmlTextAlignmentString:paragraphStyle.alignment];
 		
 		[htmlString appendString:@"<p "];

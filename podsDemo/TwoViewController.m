@@ -9,7 +9,9 @@
 #import "TwoViewController.h"
 
 @interface TwoViewController ()<UITextViewDelegate>
-
+{
+    NSInteger oldLenght;
+}
 @end
 
 @implementation TwoViewController
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _myTextView = [[RichTextEditor alloc] initWithFrame:CGRectMake(10, 80, 300, 300)];
+    
+    
     [self.view addSubview:_myTextView];
     UIButton *te = [UIButton buttonWithType:UIButtonTypeContactAdd];
 
@@ -29,24 +33,41 @@
 }
 -(void)btClick
 {
+    if (!_myTextView.text.length) {
+        return;
+    }
     UIWebView *webv  = [[UIWebView alloc] initWithFrame:CGRectMake(10, 400, 300, 200)];
     [self.view addSubview:webv];
     webv.backgroundColor= [UIColor redColor];
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"ExampleApp" ofType:@"html"];
-    NSURL* url = [NSURL fileURLWithPath:path];
+//    
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,   NSUserDomainMask, YES);
+    
+    NSString *saveDirectory=[paths objectAtIndex:0];
+    
+    NSString *saveFileName=@"myHTML.html";
+    
+    NSString *filepath=[saveDirectory stringByAppendingPathComponent:saveFileName];
+    
+    
+     [_myTextView.htmlString  writeToFile:filepath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+
+    NSURL* url = [NSURL fileURLWithPath:filepath];
     NSURLRequest* request = [NSURLRequest requestWithURL:url] ;
     [webv loadRequest:request];
-    
-//    [webv lo]
-//    [webv loadHTMLString:@"" baseURL:nil];
+
+
 }
 - (RichTextEditorFeature)featuresEnabledForRichTextEditor:(RichTextEditor *)richTextEditor
 {
     return RichTextEditorFeatureFontSize | RichTextEditorFeatureFont | RichTextEditorFeatureAll;
 }
 
+
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    oldLenght = _myTextView.text.length;
+    
     
 //    NSLog(@"%@",_myTextView.htmlString);
     if (_myTextView.text.length) {

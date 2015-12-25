@@ -24,6 +24,11 @@ PODS:
   - MBProgressHUD (0.9.1)
   - MJExtension (3.0.7)
   - MJRefresh (3.0.7)
+  - pop (1.0.8)
+  - TOWebViewController (2.2.1):
+    - TOWebViewController/Core (= 2.2.1)
+  - TOWebViewController/Core (2.2.1)
+  - YYText (0.9.16)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -31,6 +36,9 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.8)
   - MJExtension (~> 3.0.7)
   - MJRefresh (~> 3.0.7)
+  - pop (~> 1.0.8)
+  - TOWebViewController
+  - YYText (~> 0.9.16)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
@@ -38,5 +46,8 @@ SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 290cc966f0f849b12b6391a38e296e0004ae8e5e
   MJRefresh: f3e1228ec3d38c7ba5208d58032631a52f39f495
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  TOWebViewController: f3b3717d6c07b3d9a0c0f9aac271baa59734e9c0
+  YYText: d6d716cd8b776e1aa57b2ddb5f3495ee7d97ce49
 
 COCOAPODS: 0.39.0
